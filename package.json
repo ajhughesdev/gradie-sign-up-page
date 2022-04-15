@@ -1,0 +1,36 @@
+{
+  "name": "gradie-sign-up-page",
+  "version": "1.0.0",
+  "description": "solution to Codewell.cc challenge",
+  "main": "index.js",
+  "scripts": {
+    "css:watch": "postcss ./src/main.scss --output ./styles.css --env development --watch --verbose",
+    "css:build": "postcss ./src/main.scss --output ./styles.css"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajhughesdev/gradie-sign-up-page.git"
+  },
+  "keywords": [
+    "css",
+    "postcss"
+  ],
+  "author": "Andrew J Hughes",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "cssnano": "latest",
+    "postcss": "latest",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-cli": "latest",
+    "postcss-import": "latest",
+    "postcss-nested": "^5.0.6",
+    "postcss-scss": "^4.0.3"
+  }
+}

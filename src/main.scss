@@ -1,0 +1,127 @@
+@charset 'utf-8';
+@import '_reset';
+
+:root {
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero,
+.signup {
+  min-height: 34.5rem;
+}
+
+.hero {
+  background: $bg-color-hero url('../assets/iphone.png') no-repeat center bottom;
+  background-size: 27.5rem;
+
+  h1 {
+    color: $color-h1;
+    margin: 2.875rem auto 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: calc(42.19 / 36);
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    color: $color-h2;
+    margin: .5rem auto 0;
+    line-height: calc(21.09 / 18);
+  }
+}
+
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.signup {
+  background-color: $bg-color-signup;
+  margin: 2.875rem 3.25rem;
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    line-height: calc(42.19 / 36);
+    color: $color-h3;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    label:not([for='terms']) {
+      color: $color-label;
+      font-weight: 700;
+      font-family: 'DM Sans', sans-serif;
+
+      input {
+        margin: .5rem 0 0;
+        border-radius: .3125rem;
+        border: 1px solid hsl(0, 0%, 74%);
+        width: 100%;
+        padding: 1.125rem 1.0575rem;
+      }
+
+      ::placeholder {
+        color: $color-placeholder;
+        font-weight: 400;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1.125rem;
+        line-height: calc(23.44 / 18);
+      }
+    }
+
+    input[type="checkbox"] {
+      width: 21.15px;
+      height: 1.25rem;
+      border-radius: 5px;
+      border: 1px solid hsl(0, 0%, 85%);
+      transition: box-shadow 150ms;
+    }
+
+    input[type="checkbox"]:checked {
+      box-shadow: inset 0 0 0 .625rem $bg-color-button;
+    }
+  }
+
+  .tos {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10.57px;
+
+    label[for='terms'] {
+      color: $color-label;
+      font-weight: 400;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.5;
+
+      & a {
+        font-weight: 700;
+        text-decoration: underline;
+        color: $color-terms;
+      }
+    }
+  }
+
+  button {
+    background-color: $bg-color-button;
+    color: $color-h1;
+    font-weight: 700;
+    font-size: 1.125rem;
+    font-family: 'DM Sans', sans-serif;
+    line-height: calc(23.44 / 18);
+    text-align: center;
+    padding: 1.125rem 4.5625rem;
+    border-radius: 5px;
+  }
+}
