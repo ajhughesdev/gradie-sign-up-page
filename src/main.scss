@@ -10,14 +10,10 @@ main {
   flex-direction: column;
 }
 
-.hero,
-.signup {
-  min-height: 34.5rem;
-}
-
 .hero {
   background: $bg-color-hero url('../assets/iphone.png') no-repeat center bottom;
   background-size: 27.5rem;
+  height: 34.5rem;
 
   h1 {
     color: $color-h1;
@@ -44,6 +40,7 @@ h2 {
 .signup {
   background-color: $bg-color-signup;
   margin: 2.875rem 3.25rem;
+  max-height: 34.5rem;
 
   h3 {
     font-size: 2.5rem;
@@ -123,5 +120,6 @@ h2 {
     text-align: center;
     padding: 1.125rem 4.5625rem;
     border-radius: 5px;
+    cursor: pointer;
   }
 }
