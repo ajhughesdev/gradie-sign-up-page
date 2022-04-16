@@ -17,10 +17,6 @@
     "type": "git",
     "url": "git+https://github.com/ajhughesdev/gradie-sign-up-page.git"
   },
-  "keywords": [
-    "css",
-    "postcss"
-  ],
   "author": "Andrew J Hughes",
   "license": "MIT",
   "devDependencies": {

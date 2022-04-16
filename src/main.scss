@@ -1,11 +1,12 @@
 @charset 'utf-8';
 @import '_reset';
 
-:root {
+html {
   font-size: 16px;
 }
 
 body {
+  background-color: hsl(23, 82%, 75%);
   background-image: url('./assets/bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +25,7 @@ main {
   h1 {
     color: $color-h1;
     margin: 2.875rem auto 0;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: calc(42.19 / 36);
   }
@@ -48,7 +49,7 @@ h2 {
   padding: 2.875rem 3.25rem;
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     line-height: calc(42.19 / 36);
@@ -131,6 +132,7 @@ h2 {
 
 @media screen and (min-width: 48rem) and (max-width: 89.8125rem) {
   body {
+    background-color: hsl(23, 82%, 75%);
     background-image: url('./assets/bg-tab.svg');
     background-size: cover;
     display: flex;
@@ -156,6 +158,7 @@ h2 {
 
 @media screen and (min-width: 89.875rem) {
   body {
+    background-color: hsl(23, 82%, 75%);
     display: flex;
     align-items: center;
     justify-content: center;
