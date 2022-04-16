@@ -6,8 +6,9 @@
 }
 
 body {
-  background: url('https://ajhughesdev.github.io/gradie-sign-up-page/assets/bg.svg') no-repeat;
-  background-size: 100% 100%;
+  background-image: url('./assets/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
@@ -16,7 +17,7 @@ main {
 }
 
 .hero {
-  background: $bg-color-hero url('https://ajhughesdev.github.io/gradie-sign-up-page/assets/iphone.png') no-repeat center bottom;
+  background: $bg-color-hero url('./assets/iphone.png') no-repeat center bottom;
   background-size: 27.5rem;
   height: 34.5rem;
 
@@ -129,13 +130,17 @@ h2 {
 }
 
 @media screen and (min-width: 48rem) and (max-width: 89.8125rem) {
-
   body {
-    background-size: 100% 100%;
+    background-image: url('./assets/bg-tab.svg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   main {
     width: 27.6875rem;
-    margin: 130px auto 164px;
+    margin: 130px auto;
     border-radius: 10px;
 
     .hero {
@@ -151,7 +156,9 @@ h2 {
 
 @media screen and (min-width: 89.875rem) {
   body {
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   main {
